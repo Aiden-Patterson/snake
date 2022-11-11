@@ -17,9 +17,9 @@ namespace Unit05.Game.Scripting
         public void Execute(Cast cast, Script script)
         {
             //add cast here?
-            foreach(Actor actor in cast)
+            foreach(Actor actor in cast.GetAllActors())
             {
-
+                actor.MoveNext();
             }
         }
     }
